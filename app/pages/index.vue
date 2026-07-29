@@ -9,9 +9,10 @@
   </p>
 
   <p>
-    We’re more than just a community—we’re a registered association dedicated to
-    fostering collaboration, growth, and technical excellence. Join us, support
-    us, or just come hang out!
+    We’re more than just a community—we’re a
+    <NuxtLink :to="{ name: 'association' }"> registered association</NuxtLink>
+    dedicated to fostering collaboration, growth, and technical excellence. Join
+    us, support us, or just come hang out!
   </p>
 
   <section>
@@ -20,8 +21,9 @@
     <p>
       We put a lot of heart into building a strong developer community—whether
       it’s through hands-on workshops, deep technical discussions, or casual
-      meetups. Check out what we do, and in the meantime, here’s what’s coming
-      up next!
+      meetups. Check out
+      <NuxtLink :to="{ name: 'what-we-do' }">what we do</NuxtLink>, and in the
+      meantime, here’s what’s coming up next!
     </p>
   </section>
 
@@ -35,7 +37,8 @@
     </p>
     <p>
       If your company shares our passion for crafting better software, consider
-      becoming a sponsor and help us shape the future of tech together!
+      <NuxtLink :to="{ name: 'sponsors' }">becoming a sponsor</NuxtLink> and
+      help us shape the future of tech together!
     </p>
   </section>
 </template>
