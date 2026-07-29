@@ -40,4 +40,12 @@
   </section>
 </template>
 
+<script setup lang="ts">
+definePageMeta({
+  navigation: true,
+  order: 10,
+  title: "Home",
+});
+</script>
+
 <style scoped></style>

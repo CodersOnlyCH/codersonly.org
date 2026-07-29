@@ -91,30 +91,6 @@ header {
   margin-bottom: 1rem;
 }
 
-header nav ul {
-  display: flex;
-  gap: 20px;
-  padding: none;
-  padding-inline-start: 0;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-header nav li:first-child {
-  list-style: none;
-}
-
-header nav a {
-  color: var(--color-alien-hue-1);
-  text-shadow: 0 0 12px var(--color-alien-hue-1);
-  flex-shrink: 0;
-}
-
-header nav .active {
-  color: var(--color-fg-default);
-  text-shadow: 0 0 12px var(--color-fg-default);
-}
-
 time {
   color: var(--color-fg-default);
   text-shadow: 0 0 12px var(--color-fg-default);

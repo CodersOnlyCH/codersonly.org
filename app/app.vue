@@ -1,6 +1,8 @@
 <template>
   <header>
     <h1>Coders Only</h1>
+
+    <Navigation />
   </header>
 
   <main>
