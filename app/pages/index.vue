@@ -37,6 +37,9 @@
       help make our events possible. Their support fuels community-driven
       learning, knowledge-sharing, and unforgettable meetups.
     </p>
+
+    <Sponsors />
+
     <p>
       If your company shares our passion for crafting better software, consider
       <NuxtLink :to="{ name: 'sponsors' }">becoming a sponsor</NuxtLink> and
