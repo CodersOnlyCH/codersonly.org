@@ -25,6 +25,8 @@
       <NuxtLink :to="{ name: 'what-we-do' }">what we do</NuxtLink>, and in the
       meantime, here’s what’s coming up next!
     </p>
+
+    <Meetups />
   </section>
 
   <section>
