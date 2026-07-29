@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "siruca";
+  src: url("@/assets/fonts/siruca/siruca1.2-webfont.eot");
+  src:
+    url("@/assets/fonts/siruca/siruca1.2-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("@/assets/fonts/siruca/siruca1.2-webfont.woff2") format("woff2"),
+    url("@/assets/fonts/siruca/siruca1.2-webfont.woff") format("woff"),
+    url("@/assets/fonts/siruca/siruca1.2-webfont.ttf") format("truetype"),
+    url("@/assets/fonts/siruca/siruca1.2-webfont.svg#sirucaregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pragmata-mono";
+  src: url("@/assets/fonts/pragmatapro/PragmataPro_Mono_R_liga_0830.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pragmata";
+  src: url("@/assets/fonts/pragmatapro/PragmataProR_liga_0830.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pragmata";
+  src: url("@/assets/fonts/pragmatapro/PragmataProB_liga_0830.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pragmata";
+  src: url("@/assets/fonts/pragmatapro/PragmataProI_liga_0830.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "pragmata";
+  src: url("@/assets/fonts/pragmatapro/PragmataProR_liga_0830.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-main: #2cff05;
+  --color-alien-hue-1: #45cc2d;
+  --color-alien-hue-2: #45663f;
+  --color-alien-hue-3: #2b332a;
+  --color-80s-disco-1: #d405ff;
+  --color-80s-disco-2: #ff0522;
+  --color-80s-disco-3: #871b3f;
+  --color-square-1: #05a9ff;
+  --color-square-2: #d805ff;
+  --color-square-3: #ff5b05;
+  --color-split-1: #5b05ff;
+  --color-split-2: #ff05a9;
+  --color-monochromatic-1: #20d000;
+  --color-monochromatic-2: #58ff39;
+
+  --color-canvas-default: #000000;
+  --color-fg-accent: var(--color-square-1);
+  --color-fg-default: var(--color-main);
+  --color-border-default: var(--color-alien-hue-1);
+
+  background: var(--color-canvas-default);
+  text-shadow: 0 0 12px var(--color-fg-default);
+}
+
+body {
+  font-family: "siruca";
+  color: var(--color-fg-default);
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 1200px;
+}
+
+header {
+  border-bottom: 1px solid var(--color-fg-default);
+  margin-bottom: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  padding: none;
+  padding-inline-start: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+header nav li:first-child {
+  list-style: none;
+}
+
+header nav a {
+  color: var(--color-alien-hue-1);
+  text-shadow: 0 0 12px var(--color-alien-hue-1);
+  flex-shrink: 0;
+}
+
+header nav .active {
+  color: var(--color-fg-default);
+  text-shadow: 0 0 12px var(--color-fg-default);
+}
+
+time {
+  color: var(--color-fg-default);
+  text-shadow: 0 0 12px var(--color-fg-default);
+}
+
+footer {
+  border-top: 1px solid var(--color-fg-default);
+  margin-top: 1rem;
+}
+
+a {
+  color: var(--color-fg-accent);
+  text-decoration: none;
+  text-shadow: 0 0 12px var(--color-fg-accent);
+}
+
+main :is(p, li, span) {
+  font-family: "pragmata";
+}
+
+code {
+  font-family: "pragmata-mono";
+  text-shadow: 0 0 3px var(--color-fg-default);
+  line-height: normal;
+  overflow-x: auto;
+}
+
+code span {
+  font-family: "pragmata-mono";
+}
+
+code.language-shell .line::before {
+  content: "$ ";
+  color: var(--color-80s-disco-1);
+  text-shadow: 0 0 12px var(--color-80s-disco-1);
+}
+
+pre {
+  line-height: normal;
+}
+
+main h1,
+h2,
+h2 * {
+  color: var(--color-80s-disco-1);
+  text-shadow: 0 0 12px var(--color-80s-disco-1);
+}
+
+main a {
+  text-decoration: underline;
+}
+
+main h2 a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: var(--color-fg-default);
+  text-shadow: 0 0 12px var(--color-fg-default);
+}
+
+li,
+p,
+.box time {
+  color: var(--color-alien-hue-1);
+  text-shadow: 0 0 12px var(--color-alien-hue-1);
+}

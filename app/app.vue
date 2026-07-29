@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <header>
+    <h1>Coders Only</h1>
+  </header>
+
+  <main>
+    <NuxtPage />
+  </main>
+
+  <footer>
+    <p>Copyright 2026. All rights reserved.</p>
+  </footer>
 </template>

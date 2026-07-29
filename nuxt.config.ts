@@ -1,5 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
-})
+  app: {
+    head: {
+      title: "Coders Only",
+      htmlAttrs: {
+        lang: "en",
+      },
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+    },
+    rootId: "app",
+  },
+  compatibilityDate: "2025-07-15",
+  css: [
+    "~/assets/styles/all.css",
+    "~/assets/styles/desktop.css",
+    "~/assets/styles/mobile.css",
+    "~/assets/styles/tablet.css",
+  ],
+  devtools: { enabled: true },
+  vite: {
+    server: {
+      hmr: {
+        protocol: "ws",
+      },
+    },
+  },
+});
