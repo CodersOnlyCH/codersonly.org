@@ -79,7 +79,7 @@
 }
 
 body {
-  font-family: "siruca";
+  font-family: "pragmata";
   color: var(--color-fg-default);
   line-height: 1.5;
   margin: 1rem;
@@ -91,24 +91,20 @@ header {
   margin-bottom: 1rem;
 }
 
-time {
-  color: var(--color-fg-default);
-  text-shadow: 0 0 12px var(--color-fg-default);
-}
-
 footer {
   border-top: 1px solid var(--color-fg-default);
   margin-top: 1rem;
+}
+
+time {
+  color: var(--color-fg-default);
+  text-shadow: 0 0 12px var(--color-fg-default);
 }
 
 a {
   color: var(--color-fg-accent);
   text-decoration: none;
   text-shadow: 0 0 12px var(--color-fg-accent);
-}
-
-main :is(p, li, span) {
-  font-family: "pragmata";
 }
 
 code {
@@ -132,9 +128,19 @@ pre {
   line-height: normal;
 }
 
-main h1,
+h1,
+h1 *,
 h2,
-h2 * {
+h2 *,
+header,
+footer {
+  font-family: "siruca";
+}
+
+main h1,
+main h1 *,
+main h2,
+main h2 * {
   color: var(--color-80s-disco-1);
   text-shadow: 0 0 12px var(--color-80s-disco-1);
 }
