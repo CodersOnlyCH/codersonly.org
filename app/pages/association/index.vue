@@ -95,17 +95,11 @@
               Founding Charter
             </NuxtLink>
           </li>
-          <li><a href="general-assembly-2026">General Assembly 2026</a></li>
-          <li>
-            <a href="extraordinary-general-assembly-2025-06-24"
-              >Extraordinary General Assembly 2025-06-24</a
-            >
+          <li v-for="assembly in assemblies" :key="assembly.path">
+            <NuxtLink :to="assembly.path">
+              {{ assembly.title }}
+            </NuxtLink>
           </li>
-          <li><a href="general-assembly-2025">General Assembly 2025</a></li>
-          <li><a href="general-assembly-2024">General Assembly 2024</a></li>
-          <li><a href="general-assembly-2023">General Assembly 2023</a></li>
-          <li><a href="general-assembly-2022">General Assembly 2022</a></li>
-          <li><a href="general-assembly-2020">General Assembly 2020</a></li>
         </ul>
       </article>
     </li>
@@ -134,6 +128,10 @@ definePageMeta({
   order: 40,
   title: "Association",
 });
+
+const { data: assemblies } = await useAsyncData("assemblies", () =>
+  queryCollection("assemblies").order("date", "DESC").all(),
+);
 </script>
 
 <style scoped>
