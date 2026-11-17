@@ -10,14 +10,18 @@ export default defineNuxtConfig({
     },
     rootId: "app",
   },
+
   compatibilityDate: "2025-07-15",
+
   css: [
     "~/assets/styles/all.css",
     "~/assets/styles/desktop.css",
     "~/assets/styles/mobile.css",
     "~/assets/styles/tablet.css",
   ],
+
   devtools: { enabled: true },
+
   vite: {
     server: {
       ws: {
