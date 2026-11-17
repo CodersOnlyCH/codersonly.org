@@ -107,6 +107,10 @@ a {
   text-shadow: 0 0 12px var(--color-fg-accent);
 }
 
+address {
+  font-style: normal;
+}
+
 code {
   font-family: "pragmata-mono";
   text-shadow: 0 0 3px var(--color-fg-default);

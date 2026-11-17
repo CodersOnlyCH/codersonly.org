@@ -143,4 +143,8 @@ definePageMeta({
   border: 1px solid var(--color-alien-hue-3);
   padding: 1em;
 }
+
+.articles h2 {
+  margin-top: 0;
+}
 </style>
