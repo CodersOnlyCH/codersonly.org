@@ -87,17 +87,9 @@
       <article>
         <h2>Documents</h2>
         <ul>
-          <li>
-            <NuxtLink :to="{ name: 'association-bylaws' }">Bylaws</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :to="{ name: 'association-foundingCharter' }">
-              Founding Charter
-            </NuxtLink>
-          </li>
-          <li v-for="assembly in assemblies" :key="assembly.path">
-            <NuxtLink :to="assembly.path">
-              {{ assembly.title }}
+          <li v-for="document in documents" :key="document.path">
+            <NuxtLink :to="document.path">
+              {{ document.title }}
             </NuxtLink>
           </li>
         </ul>
@@ -129,8 +121,8 @@ definePageMeta({
   title: "Association",
 });
 
-const { data: assemblies } = await useAsyncData("assemblies", () =>
-  queryCollection("assemblies").order("date", "DESC").all(),
+const { data: documents } = await useAsyncData("association", () =>
+  queryCollection("association").order("date", "ASC").all(),
 );
 </script>
 

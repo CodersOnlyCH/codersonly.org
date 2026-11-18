@@ -3,10 +3,10 @@ import { z } from "zod";
 
 export default defineContentConfig({
   collections: {
-    assemblies: defineCollection({
+    association: defineCollection({
       type: "page",
       source: {
-        include: "assemblies/*.md",
+        include: "association/*.md",
         prefix: "/association/assemblies",
       },
       schema: z.object({
