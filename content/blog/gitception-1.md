@@ -9,6 +9,6 @@ Our amazing Pablo preparing to blow all our minds with the amazing insights into
 
 <!--more-->
 
-![gitception](/blog/gitception-1.webp)
+![gitception](/media/blog/gitception-1.webp)
 
 And again, online, and again, no screenshot, sorry, we’ll pay more attention in the future.

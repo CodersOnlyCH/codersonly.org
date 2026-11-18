@@ -9,6 +9,6 @@ In this session of the Git series we explored git cherry-pick and git rebase alo
 
 <!--more-->
 
-![gitception](/blog/gitception-4.webp)
+![gitception](/media/blog/gitception-4.webp)
 
 Join us the next time!

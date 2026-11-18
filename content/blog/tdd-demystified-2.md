@@ -9,5 +9,5 @@ So in the second session we took TDD Back to Basics and after watching and discu
 
 <!--more-->
 
-![tdd demystified](/blog/tdd-demystified-2.webp)
+![tdd demystified](/media/blog/tdd-demystified-2.webp)
 

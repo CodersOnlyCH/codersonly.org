@@ -13,7 +13,7 @@ building interpreters from the ground up.
 
 <!--more-->
 
-![crafting interpreters](/blog/crafting-interpreters-book-study-club-banner.webp)
+![crafting interpreters](/media/blog/crafting-interpreters-book-study-club-banner.webp)
 
 The group is full of cool and motivated people, eager to dissect the book,
 exchange ideas, and deepen their understanding of language implementation. To
@@ -21,7 +21,7 @@ keep the conversation going between meetings, we also have a dedicated [Discord
 channel](https://discord.gg/xw7wAUe2nx), open to anyone who wants to join in on
 the discussion.
 
-![crafting interpreters](/blog/crafting-interpreters-book-study-club-group-picture.webp)
+![crafting interpreters](/media/blog/crafting-interpreters-book-study-club-group-picture.webp)
 
 Huge thanks to Andrew for getting this started—we’re excited for the journey
 ahead!
