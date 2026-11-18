@@ -3,6 +3,12 @@ name: Deploy static content to Pages
 on:
   push:
     branches: ['main']
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_run:
+    workflows: ["Update Events JSON"]
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
@@ -15,6 +21,34 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  update-events:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/CodersOnlyCH/ical2json.git
+
+      - name: Fetch Events and Generate JSON
+        run: |
+          ical2json --url "https://www.meetup.com/coders-only/events/ical/" > meetups.json
+
+      - name: Upload JSON as an Artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: meetup-events
+          path: meetups.json
+          retention-days: 14
+
   deploy:
     environment:
       name: github-pages
@@ -30,6 +64,12 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
+      - name: Download events
+        uses: actions/download-artifact@v8
+        with:
+          name: meetup-events
+          path: app/assets
+          run-id: ${{ github.event.workflow_run.id }}
       - name: Build
         run: npm run generate
       - name: Setup Pages
