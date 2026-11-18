@@ -9,7 +9,7 @@ Our Zürich community of developers was graced by the visit of Alistair Cockburn
 
 <!--more-->
 
-![Meetup with Alistair Cockburn](../media/meetup-with-alistair-cockburn.webp)
+![Meetup with Alistair Cockburn](/blog/meetup-with-alistair-cockburn.webp)
 
 Alistair answered our questions with the constraint of having to answer them as #stories.
 

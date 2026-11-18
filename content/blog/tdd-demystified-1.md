@@ -9,5 +9,5 @@ Our first session into all things testing, with a focus on TDD, brought vivid di
 
 <!--more-->
 
-![tdd demystified](../media/tdd-demystified-1.webp)
+![tdd demystified](/blog/tdd-demystified-1.webp)
 

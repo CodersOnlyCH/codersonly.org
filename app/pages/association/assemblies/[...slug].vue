@@ -1,16 +1,14 @@
 <template>
-  <main>
-    <article v-if="document">
-      <h1>{{ document.title }}</h1>
+  <article v-if="document">
+    <h1>{{ document.title }}</h1>
 
-      <template v-if="document.meta.slides">
-        <h2>Präsentation</h2>
-        <iframe :src="document.meta.slides" />
-      </template>
+    <template v-if="document.meta.slides">
+      <h2>Präsentation</h2>
+      <iframe :src="document.meta.slides" />
+    </template>
 
-      <ContentRenderer :value="document" />
-    </article>
-  </main>
+    <ContentRenderer :value="document" />
+  </article>
 </template>
 
 <script setup lang="ts">

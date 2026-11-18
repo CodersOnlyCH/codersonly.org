@@ -1,11 +1,9 @@
 <template>
-  <main>
-    <article v-if="entry">
-      <h1>{{ entry.title }}</h1>
+  <article v-if="entry">
+    <h1>{{ entry.title }}</h1>
 
-      <ContentRenderer :value="entry" />
-    </article>
-  </main>
+    <ContentRenderer :value="entry" />
+  </article>
 </template>
 
 <script setup lang="ts">
@@ -29,3 +27,10 @@ useSeoMeta({
   description: entry.value.description,
 });
 </script>
+
+<style scoped>
+:deep(img) {
+  width: 100%;
+  height: auto;
+}
+</style>

@@ -9,7 +9,7 @@ The first deep dive into Git using Gitception! We discussed the complex internal
 
 <!--more-->
 
-![gitception](../media/gitception-2.webp)
+![gitception](/blog/gitception-2.webp)
 
 Here is Pablo having fun while using Gitception!
 

@@ -12,7 +12,7 @@ groups for the day.
 
 <!--more-->
 
-![SoCraTes Day 2026](../media/socrates-day-2026.webp)
+![SoCraTes Day 2026](/blog/socrates-day-2026.webp)
 
 AI was the main theme of our discussions. Sessions ranged from procedures and
 ways of working changing ("Operations with AI in a Desk", "How to estimate in

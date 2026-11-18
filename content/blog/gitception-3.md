@@ -9,7 +9,7 @@ Yay! Second deep dive into Git using Gitception! We discovered the magic behind 
 
 <!--more-->
 
-![gitception](../media/gitception-3.webp)
+![gitception](/blog/gitception-3.webp)
 
 What a delightful group of people! Enjoyed the meetup a lot!
 

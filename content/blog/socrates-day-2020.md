@@ -9,4 +9,4 @@ This was an online event and we forgot to take a screenshot of the group call so
 
 <!--more-->
 
-![SoCraTes Day 2020](../media/socrates-day-2020.webp)
+![SoCraTes Day 2020](/blog/socrates-day-2020.webp)
