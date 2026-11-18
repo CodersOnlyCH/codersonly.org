@@ -46,7 +46,7 @@
         <pre
           tabindex="0"
           class="chroma"
-        ><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sh &lt;<span class="o">(</span>curl -L https://codersonly.org/members/join<span class="o">)</span>
+        ><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sh &lt;<span class="o">(</span>curl -L https://codersonly.org/become/a/member<span class="o">)</span>
 </span></span></code></pre>
       </div>
     </li>

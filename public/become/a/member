@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+: <<EOC
+Nice having you here fellow coder! 🧑‍💻
+
+It's good you're double checking what you're running on your computer.
+As you'll notice, we have absolutely no bad intents and won't try to pwn you
+base.
+
+This script just asks you for you data and sends it to our association
+management system. Double check and if you dare, run it on you machine 😉
+
+EOC
+
+cat <<EOS
+
+🚀 Hey there, fellow software enthusiast!
+
+You're about to join a community that loves **clean code, cool tech, and good
+company**. Expect great people, **regular events**, and lots of inspiring
+conversations  about code, architecture, and whatever cool tech comes next.
+Here, you'll share ideas, and enjoy regular events where we tackle challenges,
+break things (on purpose), and build awesome stuff.
+
+It’s all about **fun, learning, and pushing our skills forward**.
+
+Enter your information to join
+
+EOS
+
+DEFAULT_PUBLIC="yes"
+
+read -p "Enter your first name: " first_name
+read -p "Enter your last name: " last_name
+read -p "Enter your email address: " email
+read -p "Enter your social media handles: (optional) " handles
+
+read -p "Do you want your membership to be shown on our website? (yes/no) [$DEFAULT_PUBLIC]: " public
+public=${public:-$DEFAULT_PUBLIC}
+
+if [[ "$public" == "yes" ]]; then
+    public_value="Ja"
+else
+    public_value=""
+fi
+
+FORM_URL="https://submit-form.com/b5g5SVQ9U"
+
+HTTP_RESPONSE=$(curl -X POST "$FORM_URL" \
+     -d "first-name=$first_name" \
+     -d "last-name=$last_name" \
+     -d "email=$email" \
+     -d "public=$public_value" \
+     -d "handles=$handles" \
+     -d "source=curl")
+
+cat <<EOS
+
+Welcome aboard ${first_name}!
+
+A member of the board will contact you soon.
+
+If you don’t hear from us, reach out at 📧 boardmembers@codersonly.org.
+(Something might have gone wrong with our association management system.)
+
+Coders Only ❤️ u
+
+EOS
+
