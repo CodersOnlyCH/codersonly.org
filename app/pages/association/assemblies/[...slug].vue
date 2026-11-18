@@ -16,8 +16,10 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const { data: assembly } = await useAsyncData(route.path, () =>
-  queryCollection("assemblies").path(route.path).first(),
+const path = computed(() => route.path.replace(/\/+$/, "") || "/");
+
+const { data: assembly } = await useAsyncData(path, () =>
+  queryCollection("assemblies").path(path.value).first(),
 );
 
 if (!assembly.value) {

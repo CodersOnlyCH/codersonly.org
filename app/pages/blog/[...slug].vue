@@ -11,8 +11,10 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const { data: entry } = await useAsyncData(route.path, () =>
-  queryCollection("blog").path(route.path).first(),
+const path = computed(() => route.path.replace(/\/+$/, "") || "/");
+
+const { data: entry } = await useAsyncData(path, () =>
+  queryCollection("blog").path(path.value).first(),
 );
 
 if (!entry.value) {
