@@ -2,11 +2,8 @@
 title: 'General Assembly 2026'
 date: 2026-03-19T19:00:00-00:00
 draft: false
+slides: https://slides.codersonly.org/gv/2026.html
 ---
-
-## Präsentation
-
-{{< iframe "https://slides.codersonly.org/gv/2026.html" >}}
 
 ## Protokoll der Generalversammlung des Vereins Coders Only am 16. Maerz 2026
 

@@ -2,11 +2,8 @@
 title: 'General Assembly 2025'
 date: 2025-01-21T20:00:00-00:00
 draft: false
+slides: https://slides.codersonly.org/gv/2025.html
 ---
-
-## Präsentation
-
-{{< iframe "https://slides.codersonly.org/gv/2025.html" >}}
 
 ## Protokoll der Generalversammlung des Vereins Coders Only am 21. Januar 2025
 

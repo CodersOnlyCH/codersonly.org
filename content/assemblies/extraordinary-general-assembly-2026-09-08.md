@@ -2,11 +2,8 @@
 title: 'Extraordinary General Assembly 2026-09-08'
 date: 2026-09-08T20:00:00-00:00
 draft: false
+slides: https://slides.codersonly.org/gv/2026-09-08.html
 ---
-
-## Präsentation
-
-{{< iframe "https://slides.codersonly.org/gv/2026-09-08.html" >}}
 
 ## Protokoll der Generalversammlung des Vereins Coders Only am 8. September 2026
 

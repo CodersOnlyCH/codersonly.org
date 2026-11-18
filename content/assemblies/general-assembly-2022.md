@@ -2,11 +2,8 @@
 title: 'General Assembly 2022'
 date: 2022-06-08T19:30:00-00:00
 draft: false
+slides: /documents/ga/2022-06-08/slides.pdf
 ---
-
-## Präsentation
-
-{{< iframe "../documents/ga/2022-06-08/slides.pdf" >}}
 
 ## Protokoll der Generalversammlung des Vereins Coders Only am 8. Juni 2022
 

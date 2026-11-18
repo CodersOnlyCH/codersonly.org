@@ -2,11 +2,8 @@
 title: 'Extraordinary General Assembly 2025-06-24'
 date: 2025-06-24T20:00:00-00:00
 draft: false
+slides: https://slides.codersonly.org/gv/2025-06-24.html
 ---
-
-## Präsentation
-
-{{< iframe "https://slides.codersonly.org/gv/2025-06-24.html" >}}
 
 ## Protokoll der Generalversammlung des Vereins Coders Only am 21. Januar 2025
 

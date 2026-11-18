@@ -2,11 +2,8 @@
 title: 'General Assembly 2024'
 date: 2024-09-05T19:30:00-00:00
 draft: false
+slides: /documents/ga/2024-09-05/slides.pdf
 ---
-
-## Präsentation
-
-{{< iframe "../documents/ga/2024-09-05/slides.pdf" >}}
 
 ## Protokoll der Generalversammlung des Vereins Coders Only am 5. September 2024
 

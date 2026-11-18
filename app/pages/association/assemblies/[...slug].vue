@@ -3,6 +3,11 @@
     <article v-if="assembly">
       <h1>{{ assembly.title }}</h1>
 
+      <template v-if="assembly.meta.slides">
+        <h2>Präsentation</h2>
+        <iframe :src="assembly.meta.slides" />
+      </template>
+
       <ContentRenderer :value="assembly" />
     </article>
   </main>
@@ -27,3 +32,12 @@ useSeoMeta({
   description: assembly.value.description,
 });
 </script>
+
+<style scoped>
+iframe {
+  border: 1px solid var(--color-border-default);
+  min-height: 400px;
+  height: auto;
+  width: 100%;
+}
+</style>
